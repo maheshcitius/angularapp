@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h5>CalculatorComponent</h5>
+        </div>
+        <div class="card-body">
+            <p>
+                Operand 1:
+                <input type="number" [(ngModel)]="x"/>
+            </p>
+            <p>
+                Operand 2:
+                <input type="number" [(ngModel)]="y"/>
+            </p>
+            <button class="btn btn-primary" (click)="Add()">Add</button>
+            &nbsp;&nbsp;&nbsp;
+            <button class="btn btn-primary" (click)="Subtract()">Subtract</button>
+            &nbsp;&nbsp;&nbsp;
+            <button class="btn btn-primary" (click)="Multiply()">Multiply</button>
+            &nbsp;&nbsp;&nbsp;
+            <button class="btn btn-primary" (click)="Divide()">Divide</button>
+            <br/><br/>
+            <app-calculator-result [result]="result"></app-calculator-result>
+        </div>
+    </div>
+</div>
